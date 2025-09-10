@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400..900&family=Michroma&family=Six+Caps&display=swap');
+
+* {margin: 0;
+padding: 0;}
+
+
+body {
+    box-sizing: border-box;
+        height: 100vh;
+
+    background-color:black;
+    color: #DADFF7;
+}
+.titulo-destaque {
+    color:#087E8B;
+
+}
+
+.apresentacao {
+    margin: 4% 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.apresentacao__conteudo__titulo{
+    font-size: 35px;
+    font-family:  "Michroma", sans-serif;
+}
+.apresentacao__conteudo__paragrafo{
+    font-size: 20px;
+    font-family: "Cinzel", serif;
+}
+.apresentacao__links{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+}
+
+.apresentacao__links__subtitulo{
+ font-family:  "Michroma", sans-serif;
+ font-size: 20px;
+   
+}
+
+.apresentacao__links__botoes{
+    border: 2px solid #087E8B;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color:#DADFF7;
+    font-family: "Cinzel", serif;
+
+}
