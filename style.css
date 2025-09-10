@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400..900&family=Michroma&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Michroma&family=Six+Caps&display=swap');
 
 * {margin: 0;
 padding: 0;}
 
 
 body {
+    /* height: 100vh; */
     box-sizing: border-box;
-        height: 100vh;
-
     background-color:black;
     color: #DADFF7;
 }
@@ -17,7 +16,7 @@ body {
 }
 
 .apresentacao {
-    margin: 4% 10%;
+padding: 4% 10%;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -52,6 +51,9 @@ gap: 15px;
 }
 
 .apresentacao__links__botoes{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     border: 2px solid #087E8B;
     width: 378px;
     text-align: center;
@@ -62,5 +64,17 @@ gap: 15px;
     text-decoration: none;
     color:#DADFF7;
     font-family: "Cinzel", serif;
+}
+.apresentacao__links__botoes:hover {
+    cursor: pointer;
+    background-color: #272727;
+}
 
+.rodape{
+padding: 23.3px;
+    color: black;
+    background-color: #087E8B;
+    text-align: center;
+    font-family: "Merriweather", serif;;
+    font-weight: 300;
 }
