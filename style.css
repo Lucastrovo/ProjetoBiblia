@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Michroma&family=Six+Caps&display=swap');
 
-* {margin: 0;
-padding: 0;}
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+<<<<<<< HEAD
     /* height: 100vh; */
     box-sizing: border-box;
     background-color:black;
     color: #DADFF7;
+=======
+  height: 100vh;
+  background-color: black;
+  color: #DADFF7;
+>>>>>>> 9c70aec (Atualiza CSS responsivo)
 }
+
+/* Títulos */
 .titulo-destaque {
-    color:#087E8B;
-
+  color: #087E8B;
 }
 
+/* Apresentação */
 .apresentacao {
+<<<<<<< HEAD
 padding: 4% 10%;
 display: flex;
 align-items: center;
@@ -42,14 +53,24 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 gap: 15px;
+=======
+  margin: 4% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+>>>>>>> 9c70aec (Atualiza CSS responsivo)
 }
 
-.apresentacao__links__subtitulo{
- font-family:  "Michroma", sans-serif;
- font-size: 20px;
-   
+.apresentacao__conteudo {
+  width: 100%;
+  max-width: 615px; /* limite máximo */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
+<<<<<<< HEAD
 .apresentacao__links__botoes{
     display: flex;
     justify-content: center;
@@ -77,4 +98,68 @@ padding: 23.3px;
     text-align: center;
     font-family: "Merriweather", serif;;
     font-weight: 300;
+=======
+/* Textos */
+.apresentacao__conteudo__titulo {
+  font-size: 2rem; /* unidades relativas */
+  font-family: "Michroma", sans-serif;
+>>>>>>> 9c70aec (Atualiza CSS responsivo)
+}
+
+.apresentacao__conteudo__paragrafo {
+  font-size: 1.2rem;
+  font-family: "Cinzel", serif;
+}
+
+/* Links */
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  max-width: 378px;
+}
+
+/* Subtítulo dos links */
+.apresentacao__links__subtitulo {
+  font-family: "Michroma", sans-serif;
+  font-size: 1rem;
+}
+
+/* Botões */
+.apresentacao__links__botoes {
+  border: 2px solid #087E8B;
+  width: 100%;
+  max-width: 378px; /* limite máximo */
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #DADFF7;
+  font-family: "Cinzel", serif;
+}
+
+/* === Media Queries para celulares === */
+@media (max-width: 768px) {
+  .apresentacao {
+    flex-direction: column; /* empilha o conteúdo no celular */
+    margin: 4% 5%;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 1.8rem;
+  }
+
+  .apresentacao__conteudo__paragrafo {
+    font-size: 1rem;
+  }
+
+  .apresentacao__links__botoes {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+  }
 }
