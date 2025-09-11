@@ -9,13 +9,38 @@ body {
     background-color:black;
     color: #DADFF7;
 }
+
+.cabecalho{
+  padding:1% 0% 0% 10%;
+}
+
+.cabeacalho__menu{
+      display: flex;
+      gap: 80px;
+
+    }
+
+
+    .cabecalho__menu__link{
+      font-family:"Michroma", sans-serif;
+      color: #087E8B;
+      font-weight: 300;
+      text-decoration: none;
+      
+    }
+
+  
+
+
+
+
 .titulo-destaque {
     color:#087E8B;
 
 }
 
 .apresentacao {
-    padding: 4% 10%;
+    padding: 2% 9%;
 display: flex;
 align-items: center;
 justify-content: space-between;
