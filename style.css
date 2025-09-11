@@ -1,80 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Michroma&family=Six+Caps&display=swap');
 
-* {margin: 0;
-padding: 0;}
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    box-sizing: border-box;
-    background-color:black;
+    background-color: black;
     color: #DADFF7;
 }
 
-.cabecalho{
-  padding:1% 0% 0% 10%;
+/* ================= CABEÇALHO ================= */
+.cabecalho {
+    padding: 1% 0 0 10%;
 }
 
-.cabeacalho__menu{
-      display: flex;
-      gap: 80px;
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
 
-    }
+.cabecalho__menu__link {
+    font-family: "Michroma", sans-serif;
+    color: #087E8B;
+    font-weight: 300;
+    text-decoration: none;
+}
 
+.cabecalho__menu__link:hover {
+    cursor: pointer;
+    color: #DADFF7;
+}
 
-    .cabecalho__menu__link{
-      font-family:"Michroma", sans-serif;
-      color: #087E8B;
-      font-weight: 300;
-      text-decoration: none;
-    
-    }
-
-  
-
-
-
-
+/* ================= TÍTULOS ================= */
 .titulo-destaque {
-    color:#087E8B;
-
+    color: #087E8B;
 }
 
+/* ================= APRESENTAÇÃO ================= */
 .apresentacao {
     padding: 2% 9%;
-display: flex;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.apresentacao__conteudo{
+
+.apresentacao__conteudo {
     width: 615px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
 
-}
-.apresentacao__conteudo__titulo{
+.apresentacao__conteudo__titulo {
     font-size: 35px;
-    font-family:  "Michroma", sans-serif;
+    font-family: "Michroma", sans-serif;
 }
-.apresentacao__conteudo__paragrafo{
+
+.apresentacao__conteudo__paragrafo {
     font-size: 20px;
     font-family: "Cinzel", serif;
 }
-.apresentacao__links{
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-gap: 15px;
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-.apresentacao__links__subtitulo{
- font-family:  "Michroma", sans-serif;
- font-size: 20px;
-   
+.apresentacao__links__subtitulo {
+    font-family: "Michroma", sans-serif;
+    font-size: 20px;
 }
 
-.apresentacao__links__botoes{
+.apresentacao__links__botoes {
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -86,22 +88,26 @@ gap: 15px;
     font-size: 24px;
     padding: 21.5px 0px;
     text-decoration: none;
-    color:#DADFF7;
+    color: #DADFF7;
     font-family: "Cinzel", serif;
 }
+
 .apresentacao__links__botoes:hover {
     cursor: pointer;
     background-color: #272727;
 }
-.rodape{
-  padding: 23.3px;
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  text-align: center;
-  color: black;
-  background-color: #087E8B;
+
+/* ================= RODAPÉ ================= */
+.rodape {
+    padding: 23.3px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    background-color: #087E8B;
 }
 
+/* ================= VERSÍCULO ================= */
 .versiculo-section {
     padding: 5% 10%;
     display: flex;
@@ -125,4 +131,76 @@ gap: 15px;
     font-size: 22px;
     line-height: 1.8;
     color: #DADFF7;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    .cabecalho {
+        padding: 2% 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center; /* centraliza o link Home */
+        gap: 0;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    /* Apresentação */
+    .apresentacao {
+        flex-direction: column;
+        padding: 2% 5%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Links / Botões */
+    .apresentacao__links__botoes {
+        width: 90%;
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    /* Versículo */
+    .versiculo-section {
+        padding: 5% 5%;
+        min-height: auto;
+    }
+
+    .versiculo-box {
+        padding: 25px;
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .versiculo-box p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* Rodapé */
+    .rodape {
+        font-size: 16px;
+        padding: 15px;
+    }
 }
