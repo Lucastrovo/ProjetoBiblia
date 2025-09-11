@@ -5,23 +5,7 @@ padding: 0;}
 
 
 body {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /* height: 100vh; */
     box-sizing: border-box;
-    background-color:black;
-    color: #DADFF7;
-=======
-  height: 100vh;
-  background-color: black;
-  color: #DADFF7;
->>>>>>> 9c70aec (Atualiza CSS responsivo)
-}
-=======
-    box-sizing: border-box;
-        height: 100vh;
->>>>>>> 826cde2 (atualizei os botoes clicaveis e arrumei o tamanho)
-
     background-color:black;
     color: #DADFF7;
 }
@@ -31,12 +15,7 @@ body {
 }
 
 .apresentacao {
-<<<<<<< HEAD
-<<<<<<< HEAD
-padding: 4% 10%;
-=======
-    margin: 4% 10%;
->>>>>>> 826cde2 (atualizei os botoes clicaveis e arrumei o tamanho)
+    padding: 4% 10%;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -62,16 +41,6 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 gap: 15px;
-<<<<<<< HEAD
-=======
-  margin: 4% 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
->>>>>>> 9c70aec (Atualiza CSS responsivo)
-=======
->>>>>>> 826cde2 (atualizei os botoes clicaveis e arrumei o tamanho)
 }
 
 .apresentacao__links__subtitulo{
@@ -80,10 +49,6 @@ gap: 15px;
    
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 826cde2 (atualizei os botoes clicaveis e arrumei o tamanho)
 .apresentacao__links__botoes{
     display: flex;
     justify-content: center;
@@ -98,30 +63,16 @@ gap: 15px;
     text-decoration: none;
     color:#DADFF7;
     font-family: "Cinzel", serif;
-<<<<<<< HEAD
 }
 .apresentacao__links__botoes:hover {
     cursor: pointer;
     background-color: #272727;
 }
-
 .rodape{
-padding: 23.3px;
-    color: black;
-    background-color: #087E8B;
-    text-align: center;
-    font-family: "Merriweather", serif;;
-    font-weight: 300;
-=======
-/* Textos */
-.apresentacao__conteudo__titulo {
-  font-size: 2rem; /* unidades relativas */
-  font-family: "Michroma", sans-serif;
->>>>>>> 9c70aec (Atualiza CSS responsivo)
-=======
->>>>>>> 826cde2 (atualizei os botoes clicaveis e arrumei o tamanho)
-}
-.apresentacao__links__botoes:hover {
-    cursor: pointer;
-    background-color: #272727;
+  padding: 23.3px;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  background-color: #087E8B;
 }
