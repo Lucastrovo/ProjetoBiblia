@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Versiculo</title>
+    <title>Sobre - Versículo Aleatório</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Versiculo </h1>
-    
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a href="index.html" class="cabecalho__menu__link">Home</a>
+        </nav>
+    </header>
+
+    <!-- Seção do versículo -->
+    <section class="versiculo-section">
+        <div class="versiculo-box">
+            <h1 class="titulo-destaque">Versículo do Dia</h1>
+            <p id="verse"></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer
+    </footer>
+
+    <!-- Script para versículo aleatório -->
+    <script>
+        const verses = [
+            "João 3:16 - Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+            "Salmos 23:1 - O Senhor é o meu pastor; nada me faltará.",
+            "Filipenses 4:13 - Posso todas as coisas naquele que me fortalece.",
+            "Romanos 8:28 - Sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus, daqueles que são chamados segundo o seu propósito.",
+            "Provérbios 3:5 - Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento.",
+            "Mateus 5:9 - Bem-aventurados os pacificadores, porque serão chamados filhos de Deus.",
+            "1 Coríntios 13:4 - O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha.",
+            "Salmos 91:1 - Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.",
+            "Isaías 41:10 - Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus.",
+            "Josué 1:9 - Não to mandei eu? Esforça-te, e tem bom ânimo; não pasmes, nem te espantes; porque o Senhor teu Deus é contigo por onde quer que andares."
+            // Adicione os outros versículos aqui
+        ];
+
+        const randomIndex = Math.floor(Math.random() * verses.length);
+        document.getElementById("verse").textContent = verses[randomIndex];
+    </script>
 </body>
 </html>
