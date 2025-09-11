@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Michroma&family=Six+Caps&display=swap');
+/* ================= IMPORTAÇÃO DE FONTES ================= */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cinzel:wght@400;700;900&family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&family=Michroma&family=Six+Caps&display=swap');
 
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -9,23 +11,30 @@
 body {
     background-color: black;
     color: #DADFF7;
+    font-family: "Merriweather", serif;
+    min-height: 100vh; /* melhor compatibilidade mobile/Safari */
 }
 
 /* ================= CABEÇALHO ================= */
 .cabecalho {
-    padding: 1% 0 0 10%;
+    padding: 2% 5%;
 }
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* menor gap para mobile */
+    flex-wrap: wrap;
 }
 
 .cabecalho__menu__link {
     font-family: "Michroma", sans-serif;
     color: #087E8B;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .cabecalho__menu__link:hover {
@@ -40,26 +49,30 @@ body {
 
 /* ================= APRESENTAÇÃO ================= */
 .apresentacao {
-    padding: 2% 9%;
+    padding: 3% 5%;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    flex: 1 1 90%;
+    max-width: 615px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 35px;
+    font-size: 2rem; /* 32px aprox */
     font-family: "Michroma", sans-serif;
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 20px;
+    font-size: 1.125rem; /* 18px aprox */
     font-family: "Cinzel", serif;
 }
 
@@ -67,13 +80,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 15px;
+    width: 100%;
 }
 
 .apresentacao__links__subtitulo {
     font-family: "Michroma", sans-serif;
-    font-size: 20px;
+    font-size: 1.125rem; /* 18px aprox */
 }
 
 .apresentacao__links__botoes {
@@ -81,15 +94,17 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid #087E8B;
-    width: 378px;
+    width: 100%;
+    max-width: 378px;
     text-align: center;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 24px;
-    padding: 21.5px 0px;
+    font-size: 1.25rem; /* 20px aprox */
+    padding: 15px 0;
     text-decoration: none;
     color: #DADFF7;
     font-family: "Cinzel", serif;
+    transition: background-color 0.3s ease;
 }
 
 .apresentacao__links__botoes:hover {
@@ -97,110 +112,57 @@ body {
     background-color: #272727;
 }
 
-/* ================= RODAPÉ ================= */
-.rodape {
-    padding: 23.3px;
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    text-align: center;
-    color: black;
-    background-color: #087E8B;
-}
-
 /* ================= VERSÍCULO ================= */
 .versiculo-section {
-    padding: 5% 10%;
+    padding: 5% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: auto;
 }
 
 .versiculo-box {
     background-color: #121212;
     border: 2px solid #087E8B;
     border-radius: 12px;
-    padding: 40px;
-    max-width: 800px;
+    padding: 25px;
+    max-width: 95%;
     text-align: center;
     box-shadow: 0 0 20px #087E8B44;
 }
 
 .versiculo-box p {
     font-family: "Cinzel", serif;
-    font-size: 22px;
-    line-height: 1.8;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.6;
     color: #DADFF7;
 }
 
+/* ================= RODAPÉ ================= */
+.rodape {
+    padding: 15px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    background-color: #087E8B;
+    font-size: 1rem;
+}
+
 /* ================= RESPONSIVIDADE ================= */
-@media (max-width: 768px) {
-
-    /* Cabeçalho */
-    .cabecalho {
-        padding: 2% 5%;
-    }
-
-    .cabecalho__menu {
-        justify-content: center; /* centraliza o link Home */
-        gap: 0;
-    }
-
-    .cabecalho__menu__link {
-        font-size: 20px;
-        padding: 10px 15px;
-    }
-
-    /* Apresentação */
-    .apresentacao {
-        flex-direction: column;
-        padding: 2% 5%;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .apresentacao__conteudo {
-        width: 100%;
-        gap: 25px;
-    }
-
+@media (min-width: 769px) {
     .apresentacao__conteudo__titulo {
-        font-size: 28px;
-        text-align: center;
+        font-size: 35px;
     }
-
     .apresentacao__conteudo__paragrafo {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    /* Links / Botões */
-    .apresentacao__links__botoes {
-        width: 90%;
         font-size: 20px;
-        padding: 15px 0;
     }
-
-    /* Versículo */
-    .versiculo-section {
-        padding: 5% 5%;
-        min-height: auto;
+    .apresentacao__links__botoes {
+        font-size: 24px;
+        padding: 21.5px 0;
     }
-
-    .versiculo-box {
-        padding: 25px;
-        width: 100%;
-        max-width: 95%;
-    }
-
     .versiculo-box p {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-
-    /* Rodapé */
-    .rodape {
-        font-size: 16px;
-        padding: 15px;
+        font-size: 22px;
+        line-height: 1.8;
     }
 }
